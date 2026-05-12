@@ -1,146 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Task Win | Lahore Task Service</title>
-  <meta name="description" content="Out of Lahore? Task Win handles your Lahore tasks with video proof. Documents, parcels, shopping, property visits and custom tasks." />
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: Arial, sans-serif; background: #070707; color: #fff; line-height: 1.6; }
-    a { text-decoration: none; color: inherit; }
-    .container { width: 92%; max-width: 1150px; margin: auto; }
-    .hero { min-height: 100vh; display: flex; align-items: center; background: radial-gradient(circle at top right, rgba(255,204,0,.22), transparent 35%), #070707; padding: 40px 0; }
-    .badge { display:inline-block; color:#ffcc00; border:1px solid #ffcc00; padding:8px 14px; border-radius:30px; font-size:14px; margin-bottom:20px; }
-    h1 { font-size: clamp(42px, 9vw, 92px); line-height: .95; letter-spacing: -2px; }
-    h1 span, .yellow { color:#ffcc00; }
-    .hero p { max-width: 650px; color:#ddd; font-size:18px; margin:22px 0; }
-    .btns { display:flex; gap:14px; flex-wrap:wrap; margin-top:28px; }
-    .btn { padding:14px 22px; border-radius:12px; font-weight:700; display:inline-block; }
-    .btn-primary { background:#ffcc00; color:#000; }
-    .btn-outline { border:1px solid #444; color:#fff; }
-    .stats { display:grid; grid-template-columns: repeat(3, 1fr); gap:12px; margin-top:40px; max-width:700px; }
-    .stat { background:#111; border:1px solid #222; padding:18px; border-radius:18px; }
-    .stat strong { color:#ffcc00; font-size:24px; }
-    section { padding:75px 0; }
-      .section-title { font-size:36px; margin-bottom:12px; }
-    .section-sub { color:#aaa; max-width:700px; margin-bottom:32px; }
-    .grid { display:grid; grid-template-columns: repeat(3, 1fr); gap:18px; }
-    .card { background:#111; border:1px solid #242424; border-radius:20px; padding:24px; }
-    .card h3 { color:#ffcc00; margin-bottom:10px; }
-    .card p, .muted { color:#bbb; }
-    .steps { display:grid; grid-template-columns: repeat(4, 1fr); gap:16px; }
-    .step-num { width:40px; height:40px; background:#ffcc00; color:#000; border-radius:50%; display:flex; align-items:center; justify-content:center; font-weight:800; margin-bottom:14px; }
-    .proof { background: linear-gradient(135deg, #111, #171717); border-top:1px solid #222; border-bottom:1px solid #222; }
-    .proof-box { display:grid; grid-template-columns: 1fr 1fr; gap:28px; align-items:center; }
-    .check { margin:12px 0; color:#eee; }
-    .check::before { content:'✓'; color:#ffcc00; font-weight:800; margin-right:10px; }
-    .quote { font-size:24px; border-left:4px solid #ffcc00; padding-left:20px; color:#eee; }
-    .form { background:#101010; padding:26px; border-radius:22px; border:1px solid #292929; }
-    .form input, .form textarea { width:100%; padding:14px; margin:8px 0 14px; border-radius:12px; border:1px solid #333; background:#050505; color:#fff; }
-    .footer { background:#000; border-top:1px solid #222; padding:35px 0; color:#aaa; text-align:center; }
-    .sticky { position:fixed; bottom:18px; right:18px; background:#25D366; color:#fff; padding:14px 18px; border-radius:50px; font-weight:800; box-shadow:0 10px 30px rgba(0,0,0,.4); z-index:99; }
-    @media (max-width: 800px) { .grid, .steps, .proof-box, .stats { grid-template-columns:1fr; } section { padding:55px 0; } .hero { min-height:auto; padding:70px 0; } }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task Win | Lahore Task Services</title>
+<meta name="description" content="Task Win provides delivery, shopping, document handling and custom task services in Lahore.">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif;}
+body{background:#000;color:#fff;line-height:1.6;}
+header{padding:40px 20px;text-align:center;background:#111;}
+h1{color:#ffcc00;font-size:40px;}
+.btn{
+background:#25D366;
+color:white;
+padding:12px 20px;
+border-radius:8px;
+display:inline-block;
+margin-top:15px;
+text-decoration:none;
+font-weight:bold;
+}
+section{padding:40px 20px;text-align:center;}
+.card{
+background:#111;
+padding:20px;
+margin:15px auto;
+border-radius:10px;
+max-width:500px;
+}
+footer{
+background:#111;
+padding:20px;
+text-align:center;
+}
+  .sticky-btn{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+}
+</style>
 </head>
 <body>
-    <a class="sticky" href="https://wa.me/923711572319">WhatsApp Now</a>
 
-  <header class="hero">
-    <div class="container">
-      <div class="badge">Lahore Based Task Operations</div>
-      <h1>TASK <span>WIN</span></h1>
-      <p class="yellow" style="font-weight:800;font-size:26px;">Out Of Lahore? We’ve Got Lahore.</p>
-      <p>If you are outside Lahore and need any important work done inside Lahore, Task Win handles it professionally with updates, receipts, photos and video proof.</p>
-      <div class="btns">
-        <a class="btn btn-primary" href="https://wa.me/923711572319">Book Your Task</a>
-        <a class="btn btn-outline" href="#services">View Services</a>
-      </div>
-      <div class="stats">
-        <div class="stat"><strong>Video</strong><br/>Proof Every Time</div>
-        <div class="stat"><strong>Real</strong><br/>Lahore Team</div>
-        <div class="stat"><strong>Fast</strong><br/>Task Handling</div>
-      </div>
-    </div>
+  <header>
+<h1>TASK WIN</h1>
+<h2>Need Something Done in Lahore? We Handle It.</h2>
+<p>Fast • Trusted • Same Day Service</p>
+<p>Documents • Parcels • Shopping • Custom Tasks • Urgent Errands</p>
+<a class="btn" href="https://wa.me/923711572319">Order on WhatsApp</a>
   </header>
 
-    <section id="services">
-    <div class="container">
-      <h2 class="section-title">Services We Handle</h2>
-      <p class="section-sub">Start simple. These are the high-demand Lahore tasks people usually need when they are outside the city.</p>
-      <div class="grid">
-        <div class="card"><h3>Document Work</h3><p>Collection, submission, verification, university or office related document tasks.</p></div>
-        <div class="card"><h3>Parcel Pickup</h3><p>Pickup, drop-off, courier coordination and safe handling with proof.</p></div>
-        <div class="card"><h3>Shopping Tasks</h3><p>Buy something from Lahore and get photos, bill and delivery updates.</p></div>
-        <div class="card"><h3>Property Visit</h3><p>Visit a house, shop or office location and send real photos/videos.</p></div>
-        <div class="card"><h3>Urgent Errands</h3><p>Small but important Lahore tasks handled with proper updates.</p></div>
-        <div class="card"><h3>Custom Tasks</h3><p>Tell us your Lahore task. If it is legal and possible, we will handle it.</p></div>
-      </div>
-    </div>
-    </section>
+  <section id="services">
+<h2 style="color:#ffcc00;">Our Services</h2>
 
-    <section class="proof">
-    <div class="container proof-box">
-      <div>
-        <h2 class="section-title">Every Task Comes With Proof</h2>
-        <p class="section-sub">Trust is the main product. That is why every task includes clear updates from start to finish.</p>
-        <div class="check">Start update before task begins</div>
-        <div class="check">Location/photo/video proof during task</div>
-        <div class="check">Receipt or confirmation after completion</div>
-        <div class="check">Final client confirmation on WhatsApp</div>
-      </div>
-      <div class="quote">“Aap jahan bhi hain, Lahore mein aapka kaam rukay ga nahi.”</div>
-    </div>
-    </section>
-<section>
-    <div class="container">
-      <h2 class="section-title">How It Works</h2>
-      <div class="steps">
-        <div class="card"><div class="step-num">1</div><h3>Message Us</h3><p>Send task details on WhatsApp.</p></div>
-        <div class="card"><div class="step-num">2</div><h3>Confirm Cost</h3><p>We share timing and service charges.</p></div>
-        <div class="card"><div class="step-num">3</div><h3>Task Starts</h3><p>Our Lahore team begins your work.</p></div>
-        <div class="card"><div class="step-num">4</div><h3>Get Proof</h3><p>You receive photos, videos and final proof.</p></div>
-      </div>
-    </div>
+<div class="card">
+<h3>Document Delivery</h3>
+<p>Secure delivery of important documents anywhere in Lahore.</p>
+</div>
 
-    
-</section>
-    <section class="proof">
-    <div class="container">
-      <h2 class="section-title">Why Task Win?</h2>
-      <div class="grid">
-        <div class="card"><h3>Lahore Specialist</h3><p>We focus on Lahore only, so the service stays fast and controlled.</p></div>
-        <div class="card"><h3>Professional Handling</h3><p>Every task is handled like a real operation, not a casual favor.</p></div>
-        <div class="card"><h3>Simple Booking</h3><p>No complicated app. Just WhatsApp your task and we guide you.</p></div>
-      </div>
-    </div>
+<div class="card">
+<h3>Parcel Delivery</h3>
+<p>Fast parcel pickup and drop service.</p>
+</div>
+
+<div class="card">
+<h3>Shopping Assistance</h3>
+<p>We buy and deliver groceries, gifts and shopping items.</p>
+</div>
+<div class="card">
+<h3>Custom Tasks</h3>
+<p>Need something un<header>
+<h1>TASK WIN</h1>
+<h2>Need Something Done in Lahore? We Handle It.</h2>
+<p>Fast • Trusted • Same Day Service</p>
+<p>Documents • Parcels • Shopping • Custom Tasks • Urgent Errands</p>
+<a class="btn" href="https://wa.me/923711572319">Order on WhatsApp</a>
+</header>
+
+<section id="services">
+<h2 style="color:#ffcc00;">Our Services</h2>
+
+<div class="card">
+<h3>Document Delivery</h3>
+<p>Secure delivery of important documents anywhere in Lahore.</p>
+</div>
+
+<div class="card">
+<h3>Parcel Delivery</h3>
+<p>Fast parcel pickup and drop service.</p>
+</div>
+
+<div class="card">
+<h3>Shopping Assistance</h3>
+<p>We buy and deliver groceries, gifts and shopping items.</p>
+</div>
+
+<div class="card">
+<h3>Custom Tasks</h3>
+<p>Need something unique done? Contact us.</p>
+</div>e? Contact us.</p>
+</div>
+
+<div class="card">
+<h3>24/7 Urgent Tasks</h3>
+<p>Emergency tasks handled quickly.</p>
+</div>
   </section>
 
   <section>
-    <div class="container proof-box">
-      <div>
-        <h2 class="section-title">Book Your Lahore Task</h2>
-        <p class="section-sub">Send us your task details. We will reply with availability, timing and cost.</p>
-        <p><strong class="yellow">WhatsApp:</strong> 0371-1572319</p>
-        <p class="muted">Service available for legal, safe and practical tasks only.</p>
-      </div>
-      <div class="form">
-        <h3 class="yellow">Quick Message Format</h3>
-        <p class="muted">Copy this and send on WhatsApp:</p><br/>
-        <p>My Name:</p>
-        <p>City:</p>
-        <p>Task Location in Lahore:</p>
-        <p>Task Details:</p>
-        <p>Deadline:</p>
-        <br/>
-        <a class="btn btn-primary" href="https://wa.me/923711572319?text=Hello%20Task%20Win%2C%20I%20want%20to%20book%20a%20Lahore%20task.">Send WhatsApp Message</a>
-      </div>
-    </div>
-  </section>  
+<h2 style="color:#ffcc00;">Pricing</h2>
+<div class="card">
+<p>Document Delivery: Starting from Rs.500</p>
+<p>Shopping Task: Starting from Rs.700</p>
+<p>Custom Tasks: Price depends on task</p>
+</div>
+</section>
 
-    <footer class="footer">
-    <h3 class="yellow">TASK WIN</h3>
-    <p>Your Task, Our Responsibility</p>
-    <p>WhatsApp: 0371-1572319</p>
-    <p>Instagram • TikTok • Facebook</p>
-  </footer>
+<section>
+<h2 style="color:#ffcc00;">Customer Reviews</h2>
+<div class="card">⭐ Very fast delivery service in Lahore</div>
+<div class="card">⭐ Safe document handling</div>
+<div class="card">⭐ Highly recommended for urgent tasks</div>
+</section>
+
+<section>
+<h2 style="color:#ffcc00;">Our Location</h2>
+<div class="card">
+Civic Center Commercial Area, Faisal Town, Lahore
+</div>
+</section>
+
+<section>
+<h2 style="color:#ffcc00;">Contact Us</h2>
+<div class="card">
+<p>WhatsApp: 0371-1572319</p>
+<p>Available 24/7</p>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Task Win - Your Task, Our Responsibility</p>
+</footer>
+
+<a class="sticky-btn" href="https://wa.me/923711572319">WhatsApp Now</a>
+
 </body>
-</html>
+  </html>
