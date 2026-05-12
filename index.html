@@ -1,64 +1,255 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Task Win | Lahore Task Services</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#000;
+color:white;
+line-height:1.6;
+}
+
+header{
+height:100vh;
+background:url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a') center/cover;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+padding:20px;
+}
+
+.hero{
+background:rgba(0,0,0,0.7);
+padding:30px;
+border-radius:15px;
+max-width:700px;
+}
+
+.hero h1{
+font-size:50px;
+color:#ffd700;
+}
+
+.hero p{
+font-size:20px;
+margin:15px 0;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+background:#25D366;
+color:white;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+section{
+padding:60px 20px;
+text-align:center;
+}
+
+h2{
+color:#ffd700;
+margin-bottom:20px;
+font-size:35px;
+}
+
+.services{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+max-width:1000px;
+margin:auto;
+}
+
+.card{
+background:#111;
+padding:20px;
+border-radius:12px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+max-width:1100px;
+margin:auto;
+}
+
+.gallery img{
+width:100%;
+height:300px;
+object-fit:cover;
+border-radius:12px;
+}
+
+form{
+max-width:700px;
+margin:auto;
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+input,textarea{
+padding:12px;
+border:none;
+border-radius:8px;
+}
+
+textarea{
+height:150px;
+}
+
+.socials a{
+display:inline-block;
+margin:10px;
+padding:10px 20px;
+background:#ffd700;
+color:black;
+text-decoration:none;
+border-radius:8px;
+font-weight:bold;
+}
+
+footer{
+background:#111;
+padding:30px;
+text-align:center;
+}
+
+.whatsapp-float{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:32px;
+}
+
+.hero p{
+font-size:16px;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="hero">
+<h1>TASK WIN</h1>
+<p>Out Of Lahore? We've Got Lahore.</p>
+<p>Documents • Parcels • Shopping • Custom Tasks</p>
+<a class="btn" href="https://wa.me/923711572319">Book on WhatsApp</a>
 </div>
+</header>
+
+<section>
+<h2>Why Choose Us?</h2>
+<div class="services">
 <div class="card">
-<h3>Real Team</h3>
-<p>Professional office based team in Lahore.</p>
-</div>
-<div class="card">
-<h3>Fast Execution</h3>
+<h3>Fast Service</h3>
 <p>Quick handling of urgent tasks.</p>
 </div>
+
+<div class="card">
+<h3>Trusted Team</h3>
+<p>Professional office based team in Lahore.</p>
+</div>
+
+<div class="card">
+<h3>Real Updates</h3>
+<p>Video proofs and customer satisfaction.</p>
+</div>
 </div>
 </section>
 
 <section>
-<h2 style="color:#ffcc00;">Our Services</h2>
-<div class="cards">
-<div class="card"><h3>Document Work</h3></div>
-<div class="card"><h3>Parcel Pickup</h3></div>
-<div class="card"><h3>Shopping Assistance</h3></div>
-<div class="card"><h3>Property Visits</h3></div>
-<div class="card"><h3>Custom Tasks</h3></div>
-<div class="card"><h3>Urgent Errands</h3></div>
+<h2>Our Services</h2>
+<div class="services">
+<div class="card">Document Work</div>
+<div class="card">Parcel Pickup</div>
+<div class="card">Shopping Assistance</div>
+<div class="card">Custom Tasks</div>
+<div class="card">Property Visits</div>
+<div class="card">Urgent Errands</div>
 </div>
 </section>
 
-<section class="gallery">
-<h2 style="color:#ffcc00;">Task Win Operations</h2>
-<p>Add your office/team pictures here later.</p>
-<img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72">
-<img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
-<img src="https://images.unsplash.com/photo-1556740749-887f6717d7e4">
+<section>
+<h2>Our Operations</h2>
+<div class="gallery">
+
+<img src="YOUR_OFFICE_IMAGE_LINK_HERE">
+
+<img src="YOUR_RIDER_IMAGE_LINK_HERE">
+
+<img src="YOUR_PROFESSIONAL_IMAGE_LINK_HERE">
+
+</div>
 </section>
 
 <section>
-<h2 style="color:#ffcc00;">Submit Your Task Request</h2>
-<form>
-<input type="text" placeholder="Your Name">
-<input type="text" placeholder="Your City">
-<input type="text" placeholder="Task Location in Lahore">
+<h2>Submit Your Task</h2>
+
+<form action="https://formsubmit.co/990azmat@gmail.com" method="POST">
+
+<input type="text" placeholder="Your Name" required>
+
+<input type="text" placeholder="Your City" required>
+
+<input type="text" placeholder="Task Location in Lahore" required>
+
 <textarea placeholder="Describe Your Task"></textarea>
-<a href="https://wa.me/923711572319" class="btn">Send Task on WhatsApp</a>
+
+<button class="btn" type="submit">Submit Task</button>
+
 </form>
 </section>
 
 <section>
-<h2 style="color:#ffcc00;">Follow Task Win</h2>
-<p>Watch our task journeys, office updates and real proof videos.</p>
-<div style="margin-top:20px;">
-<a class="btn" style="background:#000;border:1px solid #ffcc00;margin:8px;" href="https://www.tiktok.com/@task_win?_r=1&_t=ZS-96IS9Q3Rwv3" target="_blank">TikTok</a>
-<a class="btn" style="background:#E1306C;margin:8px;" href="https://www.instagram.com/task__win?igsh=MTA0ajVjeXN1aDB5Zg==" target="_blank">Instagram</a>
-<a class="btn" style="background:#1877F2;margin:8px;" href="https://www.facebook.com/share/1EVLPK5rBo/" target="_blank">Facebook</a>
+<h2>Follow Us</h2>
+
+<div class="socials">
+<a href="https://www.tiktok.com/@task_win?_r=1&_t=ZS-96IS9Q3Rwv3">TikTok</a>
+
+<a href="https://www.instagram.com/task__win?igsh=MTA0ajVjeXN1aDB5Zg==">Instagram</a>
+
+<a href="https://www.facebook.com/share/1EVLPK5rBo/">Facebook</a>
 </div>
 </section>
 
 <footer>
-<h2 style="color:#ffcc00;">TASK WIN</h2>
-<p>Civic Center Commercial Area, Faisal Town, Lahore</p>
+<h3>TASK WIN</h3>
+<p>Civic Center Commercial Area Faisal Town, Lahore</p>
 <p>WhatsApp: 0371-1572319</p>
 </footer>
 
-<a href="https://wa.me/923711572319" class="sticky">WhatsApp Now</a>
+<a class="whatsapp-float" href="https://wa.me/923711572319">
+WhatsApp Now
+</a>
 
 </body>
 </html>
