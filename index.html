@@ -203,15 +203,19 @@ font-size:16px;
 <section>
 <h2>Submit Your Task</h2>
 
-<form action="https://formsubmit.co/990azmat@gmail.com" method="POST">
+<form action="https://formsubmit.co/taskwin11@gmail.com" method="POST">
 
-<input type="text" placeholder="Your Name" required>
+<input type="text" name="customer_name" placeholder="Your Name" required>
 
-<input type="text" placeholder="Your City" required>
+<input type="text" name="customer_city" placeholder="Your City" required>
 
-<input type="text" placeholder="Task Location in Lahore" required>
+<input type="text" name="task_location" placeholder="Task Location in Lahore" required>
 
-<textarea placeholder="Describe Your Task"></textarea>
+<textarea name="task_details" placeholder="Describe Your Task" required></textarea>
+
+<input type="hidden" name="_subject" value="New Task Win Request">
+<input type="hidden" name="_template" value="table">
+<input type="hidden" name="_captcha" value="false">
 
 <button class="btn" type="submit">Submit Task</button>
 
